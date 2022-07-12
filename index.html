@@ -6,34 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord Chat Creator</title>
+
+    <!--Custom CSS-->
     <link rel="stylesheet" href="style.css">
 
+    <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/233a5f89a4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <!--Logo Here-->
     <div class="logo_container">
         <img src="logo.png" alt="discord">
     </div>
 
+    <!--This is the portion to fill the information-->
     <div class="information_container">
+
+        <!--Profile Picture Area-->
         <div class="select_profile">
             <h3 class="profile_text">Select Profile Picture</h3>
-            <div class="drag_area">
-                <div class="cloud_icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                <header>Drag and drop to Upload Picture</header>
-                <span>Or</span>
-                <h4>Browse Pictures</h4>
-                <input type="file" hidden>
-            </div>
+            <input type="file" name="profile_upload" class="upload_btn">
         </div>
+
+        <!--Name Area-->
         <div class="name_area">
             <label for="fname">Name</label><br>
             <input type="text" class="info_box" placeholder="Character Name"><br>
             <label for="fnamecolor">Name Color</label><br>
-            <input type="text" class="info_box" placeholder="#fff">
+            <input type="text" class="info_box" placeholder="#ffffff">
+        </div>
+
+        <!--Message Area-->
+        <div class="message_area">
+            <label for="message">Message</label><br>
+            <textarea name="message" rows="5" cols="30" class="message_box" placeholder="Your message Here"></textarea>
+            <br>
+            <label for="when">Date & Time</label><br>
+            <input type="text" placeholder="Today" class="info_box">
+            <label for="time"></label>
+            <input type="time" class="info_box">
         </div>
     </div>
+
+    <!--Image Portion: Here image is generated based on the details...-->
 
 
     <!--JavaScript-->
