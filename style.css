@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
 }
 
 .logo_container img {
@@ -12,13 +13,14 @@
 }
 
 .select_profile {
-    font-family: 'Jost', sans-serif;
     font-weight: 300;
     font-size: 20px;
 }
 
 .information_container {
     margin: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .profile_text {
@@ -33,13 +35,31 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 25%;
 }
 
-.drag_area h3 {
+.drag_area h4 {
     color: #7289DA;
+    cursor: pointer;
 }
 
 .cloud_icon {
     font-size: 30px;
+}
+
+.name_area {
+    font-weight: 500;
+    font-size: 20px;
+    border: solid 1px#000;
+    padding: 20px;
+    width: 20rem;
+}
+
+.info_box {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    border: none;
+    outline: none;
+    margin: 10px auto;
 }
